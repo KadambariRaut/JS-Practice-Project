@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+</head>
+<body>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* text-align: center; */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        h2 {
+            color: blue; 
+        }
+
+        label {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: x-small;
+            /* text-align: left;
+            display: inline-block; */
+        }
+
+        #centre {
+            text-align: left;
+            width: 80%;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 8px 8px; 
+            font-size: larger; 
+            /* border:; */
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:cadetblue; 
+          
+        }
+
+        p.error-message {
+            color: red;
+            font-size: medium;
+        }
+        
+
+    </style>
+    <img src="./logo1.png" width="300px"/>
+    <h2>Tip Calculator</h2>
+<centre>
+    <!-- <img src="./logo1.png" width="300px"/> -->
+    
+    <!-- <h2>Tip Calculator</h2> -->
+    
+    <label for="billAmount">Bill Amount</label>
+    <br>
+    <input type="text" id="billAmount">
+    <br>
+
+    <label for="percentageTip"> Percentage Tip</label>
+    <br>
+    <input type="text" id="percentageTip">
+    <br>
+  
+
+    <!-- <p id="errorMessage" class="error-message"></p> -->
+
+    <label for="tipAmount">Tip Amount</label>
+    <br>
+    <input type="text" id="tipAmount" readonly>
+    <br>
+    <label for="totalAmount">Total </label>
+    <br>
+    <input type="text" id="totalAmount" readonly>
+    <br>
+   <br>
+    <!-- <p id="errorMessage" class="error-message"></p> -->
+
+    <!-- <button onclick="calculateTip()">Calculate Tip</button> -->
+    
+    <!-- <p id="errorMessage" class="error-message"></p> -->
+</centre>
+<button onclick="calculateTip()">Calculate Tip</button>
+
+<p id="errorMessage" class="error-message"></p>
+    <!-- <script>
+        
+    </script> -->
+    <script src="script.js"></script>
+
+</body>
+</html>
